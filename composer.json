@@ -1,0 +1,22 @@
+{
+    "name": "moicirk/ecs-deploy",
+    "description": "PHP deploy client for Amazon ECS service",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Igor Murujev",
+            "email": "imurujev@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/console": "^3.4",
+        "aws/aws-sdk-php": "^3.45"
+    },
+    "autoload": {
+        "psr-4": {
+            "EcsDeploy\\": "src/"
+        }
+    },
+    "bin": ["bin/ecsdeploy"]
+}
