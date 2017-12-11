@@ -44,7 +44,7 @@ class DeployCommand extends Command
                 new InputOption('service', null, InputOption::VALUE_REQUIRED),
                 new InputOption('task', null, InputOption::VALUE_REQUIRED),
                 new InputOption('task-file', null, InputOption::VALUE_REQUIRED),
-                new InputOption('running-amount', null, InputOption::VALUE_REQUIRED, '', 1),
+                new InputOption('tasks-amount', null, InputOption::VALUE_REQUIRED, '', 1),
             ]));
     }
 
@@ -52,7 +52,7 @@ class DeployCommand extends Command
     {
         $this->input = $input;
         $this->output = $output;
-        $this->tasksToRun = $input->getOption('running-amount');
+        $this->tasksToRun = $input->getOption('tasks-amount');
 
         $this->output->writeln('Deploying task to AWS');
 
