@@ -2,6 +2,7 @@
     "name": "moicirk/ecs-deploy",
     "description": "PHP deploy client for Amazon ECS service",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Igor Murujev",
