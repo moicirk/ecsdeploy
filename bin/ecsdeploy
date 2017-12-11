@@ -1,15 +1,5 @@
 #!/usr/bin/env php
 <?php
 
-$autoload = dirname(__DIR__) . '/vendor/autoload.php';
-if (!file_exists($autoload)) {
-	$autoload = dirname(__DIR__) . '/../vendor/autoload.php';
-}
-require $autoload;
-
-$command = new EcsDeploy\DeployCommand();
-
-$app = new Symfony\Component\Console\Application();
-$app->add($command);
-$app->setDefaultCommand($command->getName());
+$app = require __DIR__ . '/../src/app.php';
 $app->run();
